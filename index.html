@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Akad Nikah Rizky & Dinda</title>
+    <meta name="description" content="Undangan pernikahan sakral Rizky & Dinda. Mohon doa dan restu untuk pernikahan kami.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Music Player -->
+    <div class="music-player">
+        <button id="music-toggle">
+            <i class="fas fa-music"></i>
+            <span id="music-status">Musik: ON</span>
+        </button>
+        <audio id="background-music" loop>
+            <!-- Programmer dapat mengganti file musik di sini -->
+            <source src="assets/music/background-music.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </div>
+
+    <!-- Opening Screen -->
+    <section id="opening-screen" class="screen active">
+        <div class="overlay"></div>
+        <div class="opening-content">
+            <div class="opening-text">
+                <h1>Undangan Pernikahan</h1>
+                <h2 class="couple-name">Rizky & Dinda</h2>
+                <p class="wedding-date">Minggu, 15 Februari 2026</p>
+                <p class="instruction">Klik tombol di bawah untuk membuka undangan</p>
+            </div>
+            
+            <!-- Galeri Foto Pengantin (Tampilan Awal) - Diubah ke JPEG -->
+            <div class="gallery-opening">
+                <div class="gallery-container">
+                    <div class="gallery-slide active">
+                        <img src="assets/images/gallery1/photo1.jpeg" alt="Rizky & Dinda Photo 1" onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/gallery1/photo2.jpeg" alt="Rizky & Dinda Photo 2" onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/gallery1/photo3.jpeg" alt="Rizky & Dinda Photo 3" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="gallery-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <button id="open-invitation" class="btn-open">
+                <i class="fas fa-envelope-open-text"></i> Buka Undangan
+            </button>
+            
+            <div class="wedding-symbol">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Invitation Content -->
+    <section id="main-invitation" class="screen">
+        <div class="container">
+            <!-- Header -->
+            <header class="invitation-header">
+                <h1>Undangan Akad Nikah</h1>
+                <h2>Rizky & Dinda</h2>
+                <p class="subtitle">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang." (QS. Ar-Rum: 21)</p>
+            </header>
+
+            <!-- Galeri Foto Pengantin (Tampilan Kedua) - Diubah ke JPEG -->
+            <section class="section gallery-section">
+                <h3 class="section-title">Galeri Cinta Kami</h3>
+                <div class="gallery-second">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="assets/images/gallery2/photo1.jpeg" alt="Foto Prewedding 1" onerror="this.src='https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/images/gallery2/photo2.jpeg" alt="Foto Prewedding 2" onerror="this.src='https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/images/gallery2/photo3.jpeg" alt="Foto Prewedding 3" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/images/gallery2/photo4.jpeg" alt="Foto Prewedding 4" onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Countdown -->
+            <section class="section countdown-section">
+                <h3 class="section-title">Hitungan Mundur Menuju Hari Bahagia</h3>
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="days">13</div>
+                        <div class="countdown-label">Hari</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="hours">10</div>
+                        <div class="countdown-label">Jam</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="minutes">20</div>
+                        <div class="countdown-label">Menit</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="seconds">2</div>
+                        <div class="countdown-label">Detik</div>
+                    </div>
+                </div>
+                <p class="countdown-date">Minggu, 15 Februari 2026</p>
+            </section>
+
+            <!-- Event Details -->
+            <section class="section event-section">
+                <h3 class="section-title">Detail Acara</h3>
+                <div class="event-details">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="event-content">
+                            <h4>Akad Nikah</h4>
+                            <p class="event-time"><i class="far fa-clock"></i> 10:00 - Selesai</p>
+                            <p class="event-date"><i class="far fa-calendar"></i> Minggu, 15 Februari 2026</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Kediaman Dinda, Junti Girang,Katapang, Kabupaten Bandung</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="event-content">
+                            <h4>Only Akad</h4>
+                            <p class="event-time"><i class="far fa-clock"></i> 10:00 - Selesai</p>
+                            <p class="event-date"><i class="far fa-calendar"></i> Minggu, 15 Februari 2026</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Kediaman Dinda, Junti Girang,Katapang, Kabupaten Bandung</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Donation -->
+            <section class="section donation-section">
+                <h3 class="section-title">Kirim Doa & Blessing</h3>
+                <p class="section-subtitle">Jika Anda ingin memberikan kado, Anda dapat mengirimkannya melalui:</p>
+                <div class="donation-card">
+                    <div class="bank-logo">
+                        <i class="fas fa-university"></i>
+                        <h4>Bank BCA</h4>
+                    </div>
+                    <div class="bank-details">
+                        <p><strong>Nomor Rekening:</strong> 3461809551</p>
+                        <p><strong>Atas Nama:</strong> Dinda Dwi Agustin</p>
+                        <p class="donation-note">Doa dan restu Anda adalah hadiah terindah bagi kami. Terima kasih atas kebahagiaan yang Anda turunkan untuk kami.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location -->
+            <section class="section location-section">
+                <h3 class="section-title">Lokasi Acara</h3>
+                <div class="location-container">
+                    <div class="location-info">
+                        <h4><i class="fas fa-mosque"></i> Lokasi Akad Nikah</h4>
+                        <p>Tempat Dinda Dwi Agustin</p>
+                        <p>Kp. Junti Girang, Katapang, Kabupaten Bandung</p>
+                        <p><a href="https://maps.app.goo.gl/noMbMcfWC6jy6Zc49" target="_blank" class="location-link"><i class="fas fa-directions"></i> Buka di Google Maps</a></p>
+                    </div>
+                    <div class="map-container">
+                        <!-- Maps Toko Dion, Katapang, Bandung -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.8768537514334!2d107.5570394741083!3d-7.023758568806197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ed55a4d28665%3A0xf936b7d55c8068df!2sToko%20Dion!5e0!3m2!1sen!2sid!4v1769965064354!5m2!1sen!2sid" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Lokasi Pernikahan Rizky & Dinda - Toko Dion, Katapang">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Guest Comments -->
+            <section class="section comments-section">
+                <h3 class="section-title">Ucapan & Doa</h3>
+                <p class="section-subtitle">Berikan ucapan dan doa terbaik untuk kami</p>
+                
+                <form id="comment-form">
+                    <div class="form-group">
+                        <input type="text" id="comment-name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="comment-message" rows="4" placeholder="Tulis ucapan dan doa untuk Rizky & Dinda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Ucapan
+                    </button>
+                </form>
+                
+                <div class="comments-container">
+                    <h4>Ucapan Terbaru</h4>
+                    <div id="comments-list">
+                        <!-- Komentar akan dimuat di sini oleh comments.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Closing -->
+            <section class="section closing-section">
+                <div class="closing-content">
+                    <h3>Terima Kasih</h3>
+                    <p>Atas kehadiran, doa, dan restu yang diberikan kepada kami. Semoga Allah SWT membalas semua kebaikan Anda.</p>
+                    <p class="closing-names">Rizky & Dinda</p>
+                    <div class="families">
+                        <p>Keluarga Besar</p>
+                        <p><strong>Bapak Sobar & Ibu Dewi</strong> dan <strong>Bapak Edi Setiawan & Ibu Lina Rostini</strong></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Floating Nav -->
+        <nav class="floating-nav">
+            <a href="#gallery-second" class="nav-item"><i class="fas fa-images"></i></a>
+            <a href="#countdown" class="nav-item"><i class="fas fa-clock"></i></a>
+            <a href="#event-details" class="nav-item"><i class="fas fa-calendar-alt"></i></a>
+            <a href="#donation" class="nav-item"><i class="fas fa-gift"></i></a>
+            <a href="#location" class="nav-item"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="#comments" class="nav-item"><i class="fas fa-comments"></i></a>
+        </nav>
+    </section>
+
+    <!-- SCRIPT UNTUK KOMENTAR (JSONBin) -->
+    <script src="comments.js"></script>
+    
+    <!-- Script Utama Website -->
+    <script src="script.js"></script>
+</body>
+</html>
